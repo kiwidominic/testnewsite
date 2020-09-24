@@ -1,0 +1,3925 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+footer {
+    margin-top: auto;
+}
+
+:root {
+    --grey-very-lt: #C1C1C1;
+    --hm-btturq: #66FCF1;
+    --hm-dkturq: #45A29E;
+    --hm-ltblack: #1F2833;
+    --hm-dkblack: #0B0C10;
+    --index-lte-blue: #F0F4F5;
+    --index-dk-blue: #124E96;
+    --black-dk: #333333;
+    --lte-grey: #757575;
+    --link-blue: #6BA2D6;
+    --mynz-topblue: #67B6D4;
+    --mynz-roleblue: #5A9FB9;
+    --mynz-dk-blue: #00637F;
+    --mynz-sltdarkblue: #005C76;
+    --mynz-brite-blue: #33B1C5;
+    --mynz-dk-grey: #585858;
+    --mynz-banner-blue: #0D576B;
+    --lt-blue-panel: #EBF7F9;
+    --light-grey: #A6A6A6;
+    --call-orange: #FB8733;
+    --call-black: #333333;
+    --call-grey: #757575;
+    --call-top: #282828;
+    --call-lt-orange: #FFF2E8;
+    --call-button: #FA7718;
+    --jm-pink: #EDD5D5;
+    --jm-black: #333333;
+    --jm-grey: #757575;
+    --jm-lt-pink: #FFF8F8;
+    --jm-top-head: #575757;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.italic p {
+    font-style: italic;
+}
+
+span {
+    color: var(--hm-btturq)
+}
+
+.co-arrow {
+    height: 100%;
+    width: auto;
+}
+.my-logo h1 a{
+    color: #ffffff;
+}
+
+.selected {
+    font-weight: bold;
+}
+
+/* grey paragraph text */
+.concept-description p {
+    color: var(--mynz-dk-grey);
+    line-height: 24px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-dk);
+    line-height: 140%;
+}
+
+.turq p {
+    color: var(--hm-dkturq);
+}
+
+.bold {
+    font-weight: 300;
+    color: var(--call-orange);
+}
+
+.bold-jm {
+    font-weight: 400;
+    color: var(--jm-grey);
+}
+
+.my-logo h1 {
+    font-size: 20px;
+}
+
+.wt-let p {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--mynz-brite-blue);
+}
+
+.key-issues p{
+    text-decoration: circles
+    ;
+}
+.black h2 {
+    color: var(--call-black);
+}
+
+.hm h1 {
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.grey-h2 h2 {
+    color: var(--lte-grey);
+}
+
+.h2-white h2 {
+    color: #ffffff;
+}
+
+.h2-grey {
+    color: var(--lte-grey);
+}
+
+.orange h2 {
+    color: var(--call-orange);
+}
+
+.side p {
+    color: var(--jm-grey);
+
+}
+
+
+.white h1 {
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: var(--hm-dkturq);
+}
+
+.view-case a {
+    color: var(--link-blue);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    align-self: center;
+}
+
+
+.side-text-wl p {
+    color: #ffffff;
+}
+
+.jm-h2 h2 {
+    color: var(--jm-grey);
+}
+
+
+/* button */
+.button {
+    background-color: var(--mynz-dk-blue);
+    border-radius: 30px;
+    border: 1px solid var(--mynz-brite-blue);
+    display: inline-block;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 7px 1px;
+    max-width: 200px;
+    text-decoration: none;
+    transition: background-color 2s ease-out
+}
+
+.button:hover {
+    background-color: var(--mynz-brite-blue);
+}
+
+.button:active {
+    position: relative;
+    top: 1px;
+}
+
+.button p {
+    color: #ffffff;
+}
+
+/* Call out button */
+.call-button {
+    background-color: var(--call-orange);
+    border-radius: 30px;
+    border: 1px solid var(--call-orange);
+    display: inline-block;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 7px 1px;
+    max-width: 200px;
+    text-decoration: none;
+    transition: background-color 2s ease-out
+}
+
+.call-button:hover {
+    background-color: var(--call-button);
+}
+
+.call-button:active {
+    position: relative;
+    top: 1px;
+}
+
+.call-button p {
+    color: #ffffff;
+}
+
+/* Jmme Lee Button */
+.jmeelee-button {
+    background-color: var(--jm-black);
+    border-radius: 30px;
+    border: 1px solid var(--jm-grey);
+    display: inline-block;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 7px 1px;
+    max-width: 200px;
+    text-decoration: none;
+    transition: background-color 2s ease-out
+}
+
+.jmeelee-button:hover {
+    background-color: var(--jm-grey);
+}
+
+.jmeelee-button:active {
+    position: relative;
+    top: 1px;
+}
+
+.jmeelee-button p {
+    color: #ffffff;
+}
+
+/* Navigation */
+.top-head-wrap {
+    background: var(--mynz-topblue);
+}
+
+.top-head-wrap-co {
+    background: var(--call-top);
+}
+
+.top-head {
+    padding: 40px 0 0 0;
+}
+
+.main-menu a {
+    color: #ffffff;
+}
+
+.main-nav {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 25px;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        ". . ml ml ml . . . . mm mm mm";
+}
+
+.my-logo {
+    grid-area: ml;
+    color: #ffffff;
+}
+
+
+.main-menu {
+    grid-area: mm;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-menu li {
+    padding-left: 30px;
+}
+
+.main-nav ul li a {
+    padding-bottom: 2px;
+}
+
+.main-nav ul li a:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+.main-nav ul.main-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 6;
+    display: none;
+}
+
+/* Index */
+
+/* Showcase */
+
+.hm-top-head-wrap {
+    background: var(--hm-dkblack);
+}
+
+.hm-showcase {
+    background: url(./images/hm-banner-bground.jpg) no-repeat center/cover;
+    width: 100%;
+}
+
+.hm-showcase-wrap {
+    margin-bottom: 75px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(14, auto);
+    grid-template-areas:
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . h h h h h h . . . ."
+        ". . h h h h h h . . . ."
+        ". . h h h h h h . . . ."
+        ". . d d d d d d . . . ."
+        ". . d d d d d d . . . ."
+        ". . l l . . . . . . . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . .";
+}
+
+.hm-heading {
+    grid-area: h;
+}
+
+.hm-desc {
+    grid-area: d;
+}
+
+.hm-learn-more {
+    grid-area: l;
+}
+
+/* About */
+/* Showcase */
+
+.about-top-head-wrap {
+    background: var(--hm-dkblack);
+}
+
+.about-showcase {
+    background: url(./images/about-banner.jpg) no-repeat center/cover;
+    width: 100%;
+}
+
+.about-showcase-wrap {
+    margin-bottom: 75px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(15, auto);
+    grid-template-areas:
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        "s s h h h h h h . . . ."
+        ". . h h h h h h . . . ."
+        ". . h h h h h h . . . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . .";
+}
+
+.about-intro-side {
+    grid-area: s;
+}
+
+.about-heading {
+    grid-area: h;
+}
+
+/* Bio */
+.about-wrap {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+        "s s d d d d . i i i i . "
+        ". . d d d d . i i i i ."
+        ". . d d d d . . . . . . "
+        ". . d d d d . . . . . ."
+        ". . d d d d . . m m m m"
+        ". . c c c . . . m m m m";
+}
+
+.about-side {
+    grid-area: s;
+}
+
+.about-desc {
+    grid-area: d;
+}
+
+.about-photo {
+    grid-area: i;
+}
+
+.about-connect {
+    grid-area: c;
+}
+
+
+.motorhome-dom img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-photo img {
+    max-width: 50%;
+    height: auto;
+}
+
+.motorhome-dom {
+    grid-area: m;
+}
+
+
+
+
+
+/* Contact */
+
+.contact-top-head-wrap {
+    background: var(--hm-dkblack);
+}
+
+.contact-showcase {
+    background: url(./images/contact-banner.jpg) no-repeat center/cover;
+    width: 100%;
+}
+
+.contact-showcase-wrap {
+    margin-bottom: 75px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(15, auto);
+    grid-template-areas:
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        "s s h h h h h h . . . ."
+        ". . h h h h h h . . . ."
+        ". . h h h h h h . . . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . .";
+}
+
+
+/* Form */
+
+.big-wrap {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+        ". . f f f f f f f f f "
+        ". . f f f f f f f f f "
+        ". . f f f f f f f f f "
+        ". . f f f f f f f f f "
+        ". . f f f f f f f f f ";
+}
+
+.form-wrap {
+    grid-area: f;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+/* .wrapper{
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+} */
+
+.wrapper>* {
+    padding: 2em;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: #f8fdfe;
+}
+
+.company-info,.contact {
+  border: 1px solid #eeeeee;
+}
+ 
+.company-info h3,
+.company-info ul {
+    text-align: left;
+    margin: 0 0 1rem 0;
+}
+
+.company-info li {
+    padding-bottom: 20px;
+}
+
+
+
+
+/* FORM STYLES */
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.contact form label {
+    display: block;
+}
+
+.contact form p {
+    margin: 0;
+}
+
+.contact form .full {
+    grid-column: 1 / 3;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #eeeeee
+}
+
+.contact input:focus, .contact textarea:focus {
+border: 1px solid var(--grey-very-lt) !important;
+
+}
+
+input:focus, textarea:focus, select:focus {
+outline-offset: 0px !important;
+outline: none !important;
+}
+
+.contact form button {
+    background: var(--hm-btturq);
+    border: 0;
+    text-transform: uppercase;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+    background: var(--hm-dkturq);
+    color: #fff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+}
+
+.contact form button:active,
+.contact form button:focus {
+    border: 1px solid var(--hm-dkturq);
+}
+.contact form button {
+    font-size: 14px;
+}
+
+.contact form .button:active{
+    border: 1px solid #000000;
+}
+
+
+/* Case studies */
+
+/* My NZ */
+
+
+.hm-mynz-wrap {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+        "s s d d . i i i i i i i "
+        ". . h h h i i i i i i i "
+        ". . m m . i i i i i i i"
+        ". . des des des i i i i i i i"
+        ". . des des des i i i i i i i"
+        ". . vc vc  . i i i i i i i ";
+}
+
+.hm-mynz-side {
+    grid-area: s;
+}
+
+.hm-mynz-date {
+    grid-area: d;
+}
+
+.hm-mynz-head {
+    grid-area: h;
+}
+
+.hm-mynz-mobapp {
+    grid-area: m;
+}
+
+.hm-mynz-des {
+    grid-area: des;
+}
+
+.hm-mynz-view-case {
+    grid-area: vc;
+}
+
+.hm-mynz-image {
+    grid-area: i;
+}
+
+.hm-mynz-image img,
+.hm-co-image img,
+.hm-jm-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Call out */
+.hm-co-wrap {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+        "s s d d . i i i i i i i "
+        ". . h h . i i i i i i i "
+        ". . m m . i i i i i i i"
+        ". . des des des i i i i i i i"
+        ". . des des des i i i i i i i"
+        ". . vc vc  . i i i i i i i ";
+}
+
+.hm-co-date {
+    grid-area: d;
+}
+
+.hm-co-head {
+    grid-area: h;
+}
+
+.hm-co-mobapp {
+    grid-area: m;
+}
+
+.hm-co-des {
+    grid-area: des;
+}
+
+.hm-co-view-case {
+    grid-area: vc;
+}
+
+.hm-co-image {
+    grid-area: i;
+}
+
+
+
+/* Jmee Lee */
+.hm-jm-wrap {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+        ". .d d . i i i i i i i "
+        ". . h h h i i i i i i i "
+        ". . m m . i i i i i i i"
+        ". . des des des i i i i i i i"
+        ". . des des des i i i i i i i"
+        ". . vc vc  . i i i i i i i ";
+}
+
+.hm-jm-date {
+    grid-area: d;
+}
+
+.hm-jm-head {
+    grid-area: h;
+}
+
+.hm-jm-mobapp {
+    grid-area: m;
+}
+
+.hm-jm-des {
+    grid-area: des;
+}
+
+.hm-jm-view-case {
+    grid-area: vc;
+}
+
+.hm-jm-image {
+    grid-area: i;
+}
+
+/* My New Zealand */
+/* Showcase */
+.showcase {
+    position: relative;
+    background: url(./images/mynz-banner.jpg) no-repeat center/cover;
+    width: 100%;
+}
+
+
+.showcase-co {
+    position: relative;
+    background: url(./images/call-banner.jpg) no-repeat center/cover;
+    width: 100%;
+}
+
+.showcase-jmlee {
+    position: relative;
+    background: url(./images/jm-banner.jpg) no-repeat center/cover;
+    width: 100%;
+
+}
+
+.explain p {
+    color: #ffffff;
+}
+
+.my-nz-phone img,
+.co-phone img,
+.jm-phone-banner img {
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+.showcase-wrap {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(14, auto);
+    grid-template-areas:
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        ". . . . . . . . . .  . ."
+        "a . h h h h . . p p p ."
+        ". . . . . . . . p p p ."
+        ". . . . . . . . p p p ."
+        "s . e e e e e . p p p ."
+        ". . . . . . . . p p p ."
+        ". . . . . . . . p p p ."
+        ". . . . . . . . p p p .";
+}
+
+.side-text-wl {
+    grid-area: s;
+}
+
+.side-text-bb {
+    grid-area: s;
+}
+
+.mynz-heading,
+.co-heading {
+    grid-area: h;
+    color: #ffffff;
+}
+
+.explain {
+    grid-area: e;
+}
+
+.mynz-arrow,
+.co-arrow {
+    grid-area: a;
+}
+
+.my-nz-phone,
+.co-phone,
+.jm-phone-banner {
+    grid-area: p;
+    position: relative;
+}
+
+
+/* Role strip */
+.role-strip-wrap {
+    background: var(--mynz-dk-blue);
+}
+
+.co-strip-wrap {
+    background: var(--call-black);
+}
+
+.role-main {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    padding: 20px 0;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas:
+        "s . d d d d d d d d d .";
+}
+
+.role-side-text {
+    grid-area: s;
+    color: #ffffff;
+    align-self: center;
+}
+
+.role-description {
+    grid-area: d;
+    align-self: center;
+}
+
+.role-description p {
+    color: #ffffff;
+}
+
+/* The problem */
+.the-problem {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(16, auto);
+    grid-template-areas:
+        "st st  pt pt pt pt pt pt pt pt pt pt"
+        ". . pt pt pt pt pt pt pt pt pt pt"
+        ". . pt pt pt pt pt pt pt pt pt pt"
+        ". . pt pt pt pt pt pt pt pt pt pt"
+        ". . . . . . . . . . . ."
+        ". . pp pp pp pp pp pd pd pd pd pd "
+        ". . pp pp pp pp pp pd pd pd pd pd "
+        ". . pp pp pp pp pp pd pd pd pd pd "
+        ". . pp pp pp pp pp pd pd pd pd pd "
+        ". . pp pp pp pp pp pd pd pd pd pd "
+        ". . pp pp pp pp pp pd pd pd pd pd "
+        ". . . . . . . . . . . ."
+        ". . sh sh sh sh sh shs shs shs shs shs"
+        ". . sh sh sh sh sh shs shs shs shs shs"
+        ". . sh sh sh sh sh shs shs shs shs shs"
+        ". . sh sh sh sh sh shs shs shs shs shs";
+}
+
+.side-text {
+    grid-area: st;
+}
+
+.people-take {
+    grid-area: pt;
+}
+
+.problem-photos {
+    grid-area: pp;
+}
+
+.small-head {
+    grid-area: sh;
+}
+
+.photo-diagram {
+    grid-area: pd;
+}
+
+.small-head-storage {
+    grid-area: shs;
+}
+
+.the-problem img {
+    width: 100%;
+}
+
+.blue-letter {
+    color: var(--mynz-brite-blue);
+}
+
+/* How might we */
+.how-might-we {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas:
+        "s s h h h h h h h h h h";
+}
+
+.side-text-hmw {
+    grid-area: s;
+}
+
+.hw-might {
+    grid-area: h;
+}
+
+/* The concept */
+.the-concept-wrap {
+    background: var(--index-lte-blue);
+    margin-bottom: 65px;
+}
+
+.the-concept-wrap img {
+    width: 100%;
+}
+
+.the-concept {
+    padding: 65px 0;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas:
+
+        "c c i i i i i i i i . ."
+        ". . d d d d d d d d d ."
+        ". . . . . . . . . . . ."
+        ". . w w w t t t m m m ."
+        ". . w w w t t t m m m ."
+        ". . w w w t t t m m m ."
+        ". . w w w t t t m m m ."
+        ". . w w w t t t m m m ."
+        ". . w w w t t t m m m .";
+
+}
+
+.the-concept-side {
+    grid-area: c;
+}
+
+.icon-imag-head {
+    grid-area: i;
+}
+
+.concept-description {
+    grid-area: d;
+}
+
+.image-whangamata {
+    grid-area: w;
+}
+
+.img-teanau {
+    grid-area: t;
+}
+
+.img-mtcook {
+    grid-area: m;
+}
+
+/* How it works */
+.hw-it-wrks-wrap img {
+    width: 100%;
+}
+
+.hw-it-wrks-wrap {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(16, auto);
+    grid-template-areas:
+        "s s wh wh wh wh wh wh wh wh wh wh"
+        ". . wh wh wh wh wh wh wh wh wh wh "
+        ". . . . . . . . . . . ."
+        ". . i1 i1 i1 i2 i2 i2 . i3 i3 i3"
+        ". . i1 i1 i1 i2 i2 i2 . i3 i3 i3"
+        ". . i1 i1 i1 i2 i2 i2 . i3 i3 i3"
+        ". . i1 i1 i1 i2 i2 i2 . i3 i3 i3"
+        ". . i1 i1 i1 i2 i2 i2 . i3 i3 i3"
+        ". . i1 i1 i1 i2 i2 i2 . i3 i3 i3"
+        ". . i1 i1 i1 i2 i2 i2 . i3 i3 i3"
+        ". . i1 i1 i1 i2 i2 i2 . i3 i3 i3"
+        ". . i1 i1 i1 i2 i2 i2 . i3 i3 i3"
+        ". . i1 i1 i1 i2 i2 i2 . i3 i3 i3"
+        ". . i1 i1 i1 i2 i2 i2 . i3 i3 i3"
+        ". . i1 i1 i1 i2 i2 i2 . i3 i3 i3"
+        ". . st st st st st .  . m m m ";
+}
+
+.side-hw-it-works {
+    grid-area: s;
+}
+
+.hw-it-wks-head {
+    grid-area: wh;
+}
+
+.hw-it-wks-img1 {
+    grid-area: i1;
+}
+
+.hw-it-wks-img2 {
+    grid-area: i2;
+}
+
+.static-descript {
+    grid-area: st;
+}
+
+.hw-it-wks-img3 {
+    grid-area: i3;
+}
+
+.mobile-descript {
+    grid-area: m;
+}
+
+
+/* Style and POD */
+.style-pod-wrap img {
+    width: 100%;
+}
+
+.style-pod-wrap {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(14, auto);
+    grid-template-areas:
+        ". . sh sh . i1 i1 i1 . i2 i2 i2 "
+        ". . sh sh . i1 i1 i1 . i2 i2 i2 "
+        ". . sw sw sw i1 i1 i1 . i2 i2 i2 "
+        ". . sw sw sw i1 i1 i1 . i2 i2 i2 "
+        ". . sw sw sw i1 i1 i1 . i2 i2 i2 "
+        ". . sw sw sw i1 i1 i1 . i2 i2 i2 "
+        ". . . . . i1 i1 i1 . i2 i2 i2 "
+        ". . . . . i1 i1 i1 . i2 i2 i2 "
+        ". . . . . i1 i1 i1 . i2 i2 i2 "
+        ". . . . . i1 i1 i1 . i2 i2 i2 "
+        ". . . . . i1 i1 i1 . i2 i2 i2 "
+        ". . . . . . . . . . . ."
+        ". . . . . . . . . . . ."
+        ". . ph ph ph p1 p1 p2 p2 p3 p3 ."
+        ". . pd pd pd p1 p1 p2 p2 p3 p3 .";
+
+}
+
+.select-style-head {
+    grid-area: sh;
+}
+
+.select-style-wording {
+    grid-area: sw;
+}
+
+.style-pic1 {
+    grid-area: i1;
+}
+
+.style-pic2 {
+    grid-area: i2;
+}
+
+.pod-head {
+    grid-area: ph;
+}
+
+.pod-image-logo-1 {
+    grid-area: p1;
+}
+
+.pod-image-logo-2 {
+    grid-area: p2;
+}
+
+.pod-image-logo-3 {
+    grid-area: p3;
+}
+
+.pod-description {
+    grid-area: pd;
+}
+
+/* Unique */
+.unique-wrapper {
+    background: var(--mynz-dk-blue);
+    margin-bottom: 65px;
+    padding: 30px 0;
+}
+
+.unique-image img {
+    width: 80%;
+    height: auto;
+}
+
+.unique-inner-wrap {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "s s h h h h h . i i i . "
+        ". . d d d d d . i i i ."
+        ". . d d d d d . i i i .";
+}
+
+.side-text-unique {
+    grid-area: s;
+    align-self: center;
+}
+
+.unique-heading {
+    grid-area: h;
+    align-self: center;
+}
+
+.unique-description {
+    grid-area: d;
+}
+
+.unique-image {
+    grid-area: i;
+}
+
+/* Memory created */
+.mem-created-wrap {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(15, auto);
+    grid-template-areas:
+        ". . h h h h h h h . . ."
+        ". . . . . . . . . . . ."
+        ". . p p p p . v v v v ."
+        ". . p p p p . v v v v ."
+        ". . p p p p . v v v v ."
+        ". . p p p p . v v v v ."
+        ". . p p p p . v v v v ."
+        ". . p p p p . v v v v ."
+        ". . p p p p . v v v v ."
+        ". . p p p p . v v v v ."
+        ". . p p p p . v v v v ."
+        ". . p p p p . v v v v ."
+        ". . p p p p . v v v v ."
+        ". . p p p p . v v v v ."
+        ". . f f . . . vi vi . . . ";
+}
+
+.mem-created-head {
+    grid-area: h;
+}
+
+.mem-created-img1 {
+    grid-area: p;
+}
+
+.mem-created-img2 {
+    grid-area: v;
+}
+
+.framed {
+    grid-area: f;
+}
+
+.vinyl {
+    grid-area: vi;
+}
+
+.mem-created-img1 img,
+.mem-created-img2 img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+/* Call Out */
+
+.prob-wrap {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(16, auto);
+    grid-template-areas:
+        "s s se se se se se se se se se ."
+        ". . se se se se se se se se se . "
+        ". . se se se se se se se se se . "
+        ". . . . . . . . . . . ."
+        ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+        ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+        ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+        ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+        ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+        ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+        ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+        ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+        ". . en en en en en so so so so so"
+        ". . en en en en en so so so so so"
+        ". . en en en en en so so so so so";
+}
+
+.prob-side {
+    grid-area: s;
+}
+
+.prob-search {
+    grid-area: se;
+}
+
+.prob-im1 {
+    grid-area: i1;
+}
+
+.prob-im1 img,
+.prob-im2 img {
+    width: 100%;
+    height: auto;
+}
+
+.prob-im2 {
+    grid-area: i2;
+}
+
+.prob-engine {
+    grid-area: en;
+}
+
+.prob-social {
+    grid-area: so;
+}
+
+/* Findings */
+.find-wrap {
+    background: var(--call-lt-orange);
+}
+
+.find-main {
+    padding: 65px 0;
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(14, auto);
+    grid-template-areas:
+        "s s i1 i1 i1 i2 i2 i2 i3 i3 i3 ."
+        ". . i1 i1 i1 i2 i2 i2 i3 i3 i3 . "
+        ". . i1 i1 i1 i2 i2 i2 i3 i3 i3 ."
+        ". . t1 t1 t1 t2 t2 t2 t3 t3 t3 ."
+        ". . t1 t1 t1 t2 t2 t2 t3 t3 t3 ."
+        ". . t1 t1 t1 t2 t2 t2 t3 t3 t3 ."
+        ". . . . . . . . . . . ."
+        ". . s1 s1 s1 b1 b1 bb1 bb1 bb1 bb1 bb1"
+        ". . s1 s1 s1 b2 b2 bb2 bb2 bb2 bb2 bb2"
+        ". . s1 s1 s1 b3 b3 bb3 bb3 bb3 bb3 bb3"
+        ". . s1 s1 s1 b4 b4 bb4 bb4 bb4 bb4 bb4"
+        ". . s1 s1 s1 b5 b5 bb5 bb5 bb5 bb5 bb5"
+        ". . . . . . . bb bb bb bb bb"
+        ". . . . . . . fs fs fm fm m";
+}
+
+.find-side {
+    grid-area: s;
+}
+
+.find-im1 {
+    grid-area: i1;
+}
+
+
+.find-im2 {
+    grid-area: i2;
+}
+
+.find-im3 {
+    grid-area: i3;
+}
+
+.find-text1 {
+    grid-area: t1;
+}
+
+.find-text2 {
+    grid-area: t2;
+}
+
+.find-text3 {
+    grid-area: t3;
+}
+
+.find-stress {
+    grid-area: s1;
+}
+
+.find-bar1 {
+    grid-area: b1;
+}
+
+.find-bar2 {
+    grid-area: b2;
+}
+
+.find-bar3 {
+    grid-area: b3;
+}
+
+.find-bar4 {
+    grid-area: b4;
+}
+
+.find-bar5 {
+    grid-area: b5;
+}
+
+.bar1 {
+    grid-area: bb1;
+    align-self: center;
+}
+
+.bar2 {
+    grid-area: bb2;
+    align-self: center;
+}
+
+.bar3 {
+    grid-area: bb3;
+    align-self: center;
+}
+
+.bar4 {
+    grid-area: bb4;
+    align-self: center;
+}
+
+.bar5 {
+    grid-area: bb5;
+    align-self: center;
+}
+
+.bar-bottom {
+    grid-area: bb;
+    border: var(--light-grey) solid 1px;
+}
+
+.find-nt-strssf {
+    grid-area: fs;
+
+}
+
+.find-moderately {
+    grid-area: fm;
+
+}
+
+.find-stressful {
+    grid-area: m;
+    justify-self: end;
+}
+
+.find-im1 img,
+.find-im2 img,
+.find-im3 img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* How might we */
+.how-wrap {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "s s h h h h h h h h h h"
+        ". . h h h h h h h h h h ";
+}
+
+.how-side {
+    grid-area: s;
+}
+
+.how-head {
+    grid-area: h;
+}
+
+/* Explorations */
+.explore-wrap {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(16, auto);
+    grid-template-areas:
+
+        "s s si si si si si si . . . ."
+        ". . l l l l l l l l l l"
+        ". . l l l l l l l l l l"
+        ". . . . . . . . . . . ."
+        ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+        ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+        ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+        ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+        ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+        ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+        ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+        ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+        ". . p p p p p i2 i2 i2 i2 i2"
+        ". . p p p p p i2 i2 i2 i2 i2"
+        ". . p p p p p it it it it it";
+}
+
+.ex-side {
+    grid-area: s;
+}
+
+.ex-simplify {
+    grid-area: si;
+}
+
+.ex-learing {
+    grid-area: l;
+}
+
+.ex-im1 {
+    grid-area: i1;
+}
+
+.ex-im2 {
+    grid-area: i2;
+}
+
+.ex-power {
+    grid-area: p;
+}
+
+.ex-iterations {
+    grid-area: it;
+}
+
+.ex-im1 img,
+.ex-im2 img {
+    width: 100%;
+    height: auto;
+}
+
+.ex-iterations p {
+    font-style: italic;
+    color: var(--light-grey);
+}
+
+/* Core functions */
+.core-wrapper {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, auto);
+    grid-template-areas:
+        "s s f f f f f f f f f f"
+        ". . f f f f f f f f f f"
+        ". . . . . . . . . . . ."
+        ". . i1 i1 i1 i2 i2 i2 i3 i3 i3 ."
+        ". . i1 i1 i1 i2 i2 i2 i3 i3 i3 ."
+        ". . i1 i1 i1 i2 i2 i2 i3 i3 i3 ."
+        ". . st st st b b b c c c ."
+        ". . st st st b b b c c c ."
+        ". . st st st b b b c c c ."
+        ". . st st st b b b c c c .";
+}
+
+.core-side {
+    grid-area: s;
+}
+
+.core-feedback {
+    grid-area: f;
+}
+
+.core-im1 {
+    grid-area: i1;
+}
+
+.core-im2 {
+    grid-area: i2;
+}
+
+.core-im3 {
+    grid-area: i3;
+}
+
+.core-step-text {
+    grid-area: st;
+}
+
+.core-business-text {
+    grid-area: b;
+}
+
+.core-chat-text {
+    grid-area: c;
+}
+
+.core-im1 img,
+.core-im2 img,
+.core-im3 img {
+    width: 100%;
+    height: auto;
+
+}
+
+/* Business end */
+
+.business-wrap {
+    background: var(--call-black);
+
+}
+
+
+.bus-main {
+    padding: 65px 0;
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, auto);
+    grid-template-areas:
+        "s s h h h i i i i i i i "
+        ". . d d d i i i i i i i "
+        ". . d d d i i i i i i i "
+        ". . d d d i i i i i i i "
+        ". . d d d i i i i i i i "
+        ". . d d d i i i i i i i "
+        ". . d d d i i i i i i i "
+        ". . d d d i i i i i i i "
+        ". . d d d i i i i i i i "
+        ". . d d d i i i i i i i ";
+}
+
+.bus-side {
+    grid-area: s;
+}
+
+.bus-end {
+    grid-area: h;
+}
+
+.bus-descript {
+    grid-area: d;
+}
+
+.bus-img {
+    grid-area: i;
+}
+
+.bus-img img {
+    width: 100%;
+    height: auto;
+}
+
+/* Inside the app */
+.inside-wrap {
+    margin-bottom: 80px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(29, auto);
+    grid-template-areas:
+
+        "s s h h h i1 i1 i1 . i2 i2 i2"
+        ". . h h h i1 i1 i1 . i2 i2 i2 "
+        " . . d d d i1 i1 i1 . i2 i2 i2"
+        " . . . . . i1 i1 i1 . i2 i2 i2"
+        " . . . . . i1 i1 i1 . i2 i2 i2"
+        " . . . . . i1 i1 i1 . i2 i2 i2"
+        " . . . . . i1 i1 i1 . i2 i2 i2"
+        " . . . . . i1 i1 i1 . i2 i2 i2"
+        " . . . . . i1 i1 i1 . i2 i2 i2"
+        " . . . . . i1 i1 i1 . i2 i2 i2"
+        " . . . . . i1 i1 i1 . i2 i2 i2"
+        " . . . . . i1 i1 i1 . i2 i2 i2"
+        " . . . . . i1 i1 i1 . i2 i2 i2"
+        " . . . . . i1 i1 i1 . i2 i2 i2"
+        ". . . . . . . . . . . ."
+        ". . . . . i3 i3 i3 . i4 i4 i4"
+        ". . . . . i3 i3 i3 . i4 i4 i4"
+        ". . . . . i3 i3 i3 . i4 i4 i4"
+        ". . . . . i3 i3 i3 . i4 i4 i4"
+        ". . . . . i3 i3 i3 . i4 i4 i4"
+        ". . . . . i3 i3 i3 . i4 i4 i4"
+        ". . . . . i3 i3 i3 . i4 i4 i4"
+        ". . . . . i3 i3 i3 . i4 i4 i4"
+        ". . . . . i3 i3 i3 . i4 i4 i4"
+        ". . . . . i3 i3 i3 . i4 i4 i4"
+        ". . . . . i3 i3 i3 . i4 i4 i4"
+        ". . . . . i3 i3 i3 . i4 i4 i4"
+        ". . . . . i3 i3 i3 . i4 i4 i4"
+        ". . . . . i3 i3 i3 . i4 i4 i4";
+}
+
+.inside-side {
+    grid-area: s;
+}
+
+.inside-head {
+    grid-area: h;
+}
+
+.inside-descript {
+    grid-area: d;
+}
+
+.inside-im1 {
+    grid-area: i1;
+}
+
+.inside-im2 {
+    grid-area: i2;
+}
+
+.inside-im3 {
+    grid-area: i3;
+}
+
+.inside-im4 {
+    grid-area: i4;
+}
+
+.inside-im1 img,
+.inside-im2 img,
+.inside-im3 img,
+.inside-im4 img {
+    width: 100%;
+    height: auto;
+}
+
+/* Summary */
+.summary-wrap {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        ". . s s . . . . . . . ."
+        ". . d d d d d d d d d d"
+        ". . d d d d d d d d d d"
+        ". . d d d d d d d d d d";
+}
+
+.summary {
+    grid-area: s;
+}
+
+.summary-descrip {
+    grid-area: d;
+}
+
+.foot-wrap-callout {
+    background: var(--call-lt-orange);
+    margin-top: 100px;
+    padding: 50px 0 30px 0;
+}
+
+
+
+
+
+
+
+/* Jmee lee makeup */
+
+/* Nav */
+.top-head-wrap-jmlee {
+    background-color: #292A2A;
+}
+
+/* Role strip */
+.jm-role-strip-wrap {
+    background: #000000;
+}
+
+/* The brief  */
+.brief-wrap {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas:
+        "s s h h h h h h h h h h";
+}
+
+.brief-side {
+    grid-area: s;
+}
+
+.brief-head {
+    grid-area: h;
+}
+
+/* Key issues*/
+.key-wrap {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, auto);
+    grid-template-areas:
+        "s s is is is . i i i i i ."
+        ". . is is is . i i i i i ."
+        ". . is is is . i i i i i ."
+        ". . is is is . i i i i i ."
+        ". . . . . . i i i i i ."
+        ". . c c c . i i i i i . "
+        ". . c c c . i i i i i . "
+        ". . c c c . i i i i i . "
+        ". . . . . . i i i i i ."
+        ". . . . . . i i i i i ."
+        ". . . . . . i i i i i ."
+        ". . . . . . i i i i i .";
+
+}
+
+.key-side {
+    grid-area: s;
+}
+
+.key-issues {
+    grid-area: is;
+}
+
+.key-web-old {
+    grid-area: i;
+}
+
+.key-convert-bold {
+    grid-area: c;
+}
+
+.key-web-old img {
+    width: 100%;
+    height: auto;
+}
+
+/* Proposal */
+.prop-wrap {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "s s p p p p p p p p p p"
+        "s s p p p p p p p p p p"
+        "s s p p p p p p p p p p";
+}
+
+.prop-side {
+    grid-area: s;
+}
+
+.prop-cust-prob {
+    grid-area: p;
+}
+
+
+/* Solve the prob  */
+.solve-wrap-outer {
+    background: var(--jm-lt-pink);
+}
+
+.solve-wrap {
+    padding: 65px 0;
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:
+        "s s h h . i1 i1 i1 i2 i2 i2 ."
+        ". . h h . i1 i1 i1 i2 i2 i2 . "
+        ". . . . .i1 i1 i1 i2 i2 i2 ."
+        ". . d d d id1 id1 id1 id2 id2 id2 ."
+        ". . d d d id1 id1 id1 id2 id2 id2 ."
+        ". . d d d id1 id1 id1 id2 id2 id2 ."
+        ". . d d d id1 id1 id1 id2 id2 id2 .";
+}
+
+.solve-side {
+    grid-area: s;
+}
+
+.solve-value-head {
+    grid-area: h;
+}
+
+.solve-descrip {
+    grid-area: d;
+}
+
+.solve-icon1 {
+    grid-area: i1;
+}
+
+.solve-icon2 {
+    grid-area: i2;
+}
+
+.solve-desc-icon1 {
+    grid-area: id1;
+}
+
+.solve-desc-icon2 {
+    grid-area: id2;
+}
+
+.solve-icon1 img,
+.solve-icon2 img {
+    width: 100%;
+    height: auto;
+}
+
+/* CTA  */
+.cta-wrap {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas:
+        "s s d d d d cd cd cd cd cd cd"
+        ". . d d d d cd cd cd cd cd cd  "
+        ". . d d d d cd cd cd cd cd cd  "
+        ". . d d d d cd cd cd cd cd cd  "
+        ". . d d d d cd cd cd cd cd cd  "
+        ". . b b b b cd cd cd cd cd cd"
+        ". . . . . . cd cd cd cd cd cd "
+        ". . . . . .  cd cd cd cd cd cd"
+        ". . . . . . cd cd cd cd cd cd ";
+
+}
+
+.cta-side {
+    grid-area: s;
+}
+
+.cta-desc {
+    grid-area: d;
+}
+
+.cta-diag {
+    grid-area: cd;
+}
+
+.buttons-img {
+    grid-area: b;
+}
+
+.cta-diag img,
+.buttons-img img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Branding  */
+.bnd-wrap {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas:
+        "s s h h h h h h h h h h "
+        "s s h h h h h h h h h h "
+        ". . d d . cd cd cd . fd fd ."
+        ". . d d . cd cd cd . fd fd ."
+        ". . d d . cd cd cd . fd fd ."
+        ". . d d . b1 b2 b3 . f1 f2 ."
+        ". . l l . b1 b2 b3 . f1 f2 . "
+        ". . l l . b1 b2 b3 . f1 f2 .";
+
+}
+
+.bnd-side {
+    grid-area: s;
+}
+
+.bnd-head {
+    grid-area: h;
+}
+
+.bnd-logo-desc {
+    grid-area: d;
+}
+
+.bnd-logo {
+    grid-area: l;
+}
+
+.bnd-color-desc {
+    grid-area: cd;
+}
+
+.bnd-badge1 {
+    grid-area: b1;
+    align-self: end;
+}
+
+.bnd-badge2 {
+    grid-area: b2;
+    align-self: end;
+}
+
+.bnd-badge3 {
+    grid-area: b3;
+    align-self: end;
+}
+
+.bnd-font-desc {
+    grid-area: fd;
+}
+
+.bnd-font1 {
+    grid-area: f1;
+}
+
+.bnd-font2 {
+    grid-area: f2;
+}
+
+.bnd-logo img,
+.bnd-badge1 img,
+.bnd-badge2 img,
+.bnd-badge3 img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+/* Wireframing  */
+.wire-wrap {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, auto);
+    grid-template-areas:
+        "s s h h h h h h h . . ."
+        ". . h h h h h h h . . ."
+        ". . . . . . . . . . . ."
+        ". . d1 d1 d1 d2 d2 d2 d3 d3 d3 ."
+        ". . d1 d1 d1 d2 d2 d2 d3 d3 d3 ."
+        ". . d1 d1 d1 d2 d2 d2 d3 d3 d3 ."
+        ". . d1 d1 d1 d2 d2 d2 d3 d3 d3 ."
+        ". . d1 d1 d1 d2 d2 d2 d3 d3 d3 ."
+        ". . d1 d1 d1 d2 d2 d2 d3 d3 d3 ."
+        ". . d1 d1 d1 d2 d2 d2 d3 d3 d3 ."
+        ". . d1 d1 d1 d2 d2 d2 d3 d3 d3 ."
+        ". . d1 d1 d1 d2 d2 d2 d3 d3 d3 .";
+
+}
+
+.wire-side {
+    grid-area: s;
+}
+
+.wire-head {
+    grid-area: h;
+}
+
+.wire-dia1 {
+    grid-area: d1;
+}
+
+.wire-dia2 {
+    grid-area: d2;
+}
+
+.wire-dia3 {
+    grid-area: d3;
+}
+
+.wire-dia1 img,
+.wire-dia2 img,
+.wire-dia3 img {
+    width: 100%;
+    height: auto;
+}
+
+/* Mobile  */
+
+.mob-wrap-out {
+    background: var(--jm-black);
+    padding: 20px 0;
+    margin-bottom: 65px;
+}
+
+.mob-wrap {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, auto);
+    grid-template-areas:
+        ". . . . . . . . p p p ."
+        "s s h h h . . . p p p ."
+        ". . d d d d d . p p p ."
+        ". . d d d d d . p p p ."
+        ". . d d d d d . p p p ."
+        ". . d d d d d . p p p ."
+        ". . d d d d d . p p p ."
+        ". . d d d d d . p p p ."
+        ". . . . . . . . p p p ."
+        ". . . . . . . . p p p .";
+}
+
+.mob-side {
+    grid-area: s;
+}
+
+.mob-head {
+    grid-area: h;
+}
+
+.mob-desc {
+    grid-area: d;
+}
+
+.mob-phone-full {
+    grid-area: p;
+    align-self: center;
+}
+
+.mob-phone-full img {
+    width: 80%;
+    height: auto;
+}
+
+/* The result  */
+.result-wrap {
+    margin-bottom: 65px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(35, auto);
+    grid-template-areas:
+        "s s h h h h h h . . . ."
+        ". . . . . . . . . . . ."
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+        ". . . . . . . . . . . ."
+        ". . . . . . . . . . . ."
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2";
+}
+
+.result-side {
+    grid-area: s;
+}
+
+.result-head {
+    grid-area: h;
+}
+
+.result-web1 {
+    grid-area: i1;
+}
+
+.result-web2 {
+    grid-area: i2;
+}
+
+.result-web1 img,
+.result-web2 img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+.hm-foot {
+    background: #dadada;
+    margin-top: 100px;
+    padding: 15px 0 15px 0;
+}
+
+.hm-contact-wrapper,
+.mycontact-contact-wrapper {
+    text-align: center;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas:
+        ". . c c c sm sm  . . . . . ";
+}
+
+.foot-wrap-jmeelee {
+    background: var(--jm-lt-pink);
+    margin-top: 100px;
+    padding: 50px 0 30px 0;
+}
+
+.foot-wrap-mynz {
+    background: var(--index-lte-blue);
+    margin-top: 100px;
+    padding: 50px 0 30px 0;
+}
+
+.contact-wrapper {
+    text-align: center;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "st . gt gt gt gt . but but but . ."
+        ". . . . . . . . . . . . "
+        ". . c c c sm sm  . . . . . ";
+}
+
+.side-text-contact {
+    grid-area: st;
+    justify-self: start;
+}
+
+.get-touch {
+    grid-area: gt;
+    justify-self: start;
+}
+
+.get-touch p {
+    font-size: 20px;
+}
+
+.button,
+.call-button,
+.jmeelee-button {
+    grid-area: but;
+    align-self: center;
+}
+
+.copyright {
+    grid-area: c;
+    justify-self: left;
+}
+
+.social-media {
+    grid-area: sm;
+    justify-self: start;
+    align-self: center;
+}
+
+.copyright p,
+.side-text-contact p {
+    color: var(--lte-grey);
+
+}
+
+
+
+
+
+@media all and (max-width: 480px) {
+
+    h1 {
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--mynz-brite-blue);
+    }
+
+    /* Naviagation */
+    .menu-btn {
+        display: block;
+        color: #ffffff;
+    }
+
+    .menu-btn {
+        justify-self: self-end;
+    }
+
+    .menu-btn:hover {
+        opacity: 0.5;
+    }
+
+    .main-nav ul.right-menu {
+        margin-right: 50px;
+    }
+
+    .main-nav ul.main-menu {
+        z-index: 9;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #f2f2f2;
+        width: 50%;
+        height: 100%;
+        border-right: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .main-menu a {
+        color: var(--call-black);
+    }
+
+    .main-nav ul.main-menu li {
+        padding: 10px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+
+    .main-nav {
+        grid-template-areas:
+            "ml ml ml ml ml ml ml . . . . mm";
+    }
+
+    .main-nav ul.main-menu li:last-child {
+        border-bottom: 0;
+    }
+
+    .main-nav ul.main-menu.show {
+        transform: translateX(-20px);
+    }
+
+    .main-nav ul.main-menu.show li {
+        font-size: 20px;
+    }
+
+
+    /* index */
+    .hm-showcase-wrap {
+        margin-bottom: 75px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10, auto);
+        grid-template-areas:
+            ". . . . . . . . . . . ."
+            ". . . . . . . . . . . ."
+            "h h h h h h h h h h h h"
+            "h h h h h h h h h h h h"
+            "h h h h h h h h h h h h"
+            "d d d d d d d d d d d d"
+            "d d d d d d d d d d d d"
+            "l l l l . . . . . . . .";
+    }
+
+    /* Case studies */
+
+    .hm-mynz-wrap,
+    .hm-co-wrap,
+    .hm-jm-wrap {
+        margin-bottom: 65px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:
+
+
+            "h h h h h h h h h h h h"
+            "m m m m m m . . . . . ."
+            "i i i i i i i i i i i i "
+            "i i i i i i i i i i i i "
+            "i i i i i i i i i i i i "
+            "des des des des des des des des des des des des"
+            "des des des des des des des des des des des des"
+            "vc vc vc vc vc vc . . . . . .";
+    }
+
+    .hm-mynz-date,
+    .hm-mynz-side,
+    .hm-co-date,
+    .hm-jm-date {
+        display: none;
+    }
+
+    /* Footer */
+    .hm-contact-wrapper,
+    .mycontact-contact-wrapper {
+        text-align: center;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(1, auto);
+        grid-template-areas:
+            "c c c c c c c c c sm sm sm";
+    }
+
+    .hm-contact-wrapper p,
+    .mycontact-contact-wrapper p {
+        font-size: 15px;
+    }
+
+    /* Bio */
+    .about-wrap {
+        margin-bottom: 65px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10, auto);
+        grid-template-areas:
+            "d d d d d d d d d d d d"
+            "d d d d d d d d d d d d"
+            "d d d d d d d d d d d d"
+            "d d d d d d d d d d d d"
+            " c c c c c c . . . . . ."
+            "i i i i i i i i i i i i"
+            "i i i i i i i i i i i i"
+            ". . . . . . . . . . . ."
+            "m m m m m m m m m m m m"
+            "m m m m m m m m m m m m ";
+
+
+    }
+
+    /* About */
+    .about-showcase-wrap {
+        margin-bottom: 75px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas:
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            "h h h h h h h h h h h h"
+            "h h h h h h h h h h h h"
+            "h h h h h h h h h h h h"
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . .";
+    }
+
+    .about-side,
+    .about-intro-side {
+        display: none;
+    }
+
+    .about-photo {
+        text-align: center;
+    }
+
+
+    /* Contact page */
+
+    /* Contact showcase */
+
+    .big-wrap {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "f f f f f f f f f f f f "
+            "f f f f f f f f f f f f "
+            "f f f f f f f f f f f f "
+            "f f f f f f f f f f f f "
+            "f f f f f f f f f f f f ";
+    }
+
+    .contact-showcase-wrap {
+        margin-bottom: 75px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            "h h h h h h h h  h h h h"
+            "h h h h h h h h  h h h h"
+            "h h h h h h h h  h h h h"
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . .";
+    }
+
+    /* Form */
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .wrapper>* {
+        padding: 1em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* my new zealand showcase */
+    .my-nz-phone img,
+    .jm-phone-banner img,
+    .co-phone img {
+        height: 130%;
+        width: auto;
+    }
+
+    .showcase-wrap {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(17, auto);
+        grid-template-areas:
+            ". . . . . . . . . . . ."
+            ". . . . . . . . . . . ."
+            ". . . . . . . . . . . ."
+            "h h h h h h h h . a a a"
+            ". . . . . . . . . . . ."
+            "e e e e e e e e e e e e"
+            "e e e e e e e e e e e e"
+            ". . . . . . . . . . . ."
+            ". . . . . . . . . . . ."
+            ". . . p p p p p p . . ."
+            ". . . p p p p p p . . ."
+            ". . . p p p p p p . . ."
+            ". . . p p p p p p . . ."
+            ". . . p p p p p p . . ."
+            ". . . p p p p p p . . ."
+            ". . . p p p p p p . . ."
+            ". . . p p p p p p . . .";
+    }
+
+    .mynz-arrow {
+        justify-self: right;
+    }
+
+    .side-text-wl {
+        display: none;
+    }
+
+    .side-text-bb {
+        display: none;
+    }
+
+    .mynz-heading {
+        align-self: center;
+    }
+
+    /* Role strip */
+    .role-main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* The problem */
+    .side-text {
+        display: none;
+    }
+
+    .the-problem {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* How might we */
+    .side-text-hmw {
+        display: none;
+    }
+
+    .how-might-we {
+        display: flex;
+    }
+
+
+    /* The concept */
+    .the-concept-side {
+        display: none;
+    }
+
+    .the-concept {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* How it works */
+    .side-hw-it-works {
+        display: none;
+    }
+
+    .hw-it-wrks-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* Style and POD */
+    .style-pod-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* Unique */
+    .side-text-unique {
+        display: none;
+    }
+
+    .unique-inner-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* Memory created */
+    .mem-created-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* Footer */
+    .side-text-contact {
+        display: none;
+    }
+
+    .contact-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .social-media {
+        display: none;
+    }
+
+    .button,
+    .call-button,
+    .jmeelee-button {
+        width: 200px;
+    }
+
+    /* Call out */
+
+    /* The Problem */
+    .prob-wrap {
+        margin-bottom: 65px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .prob-side {
+        display: none;
+    }
+
+    /* Findings */
+    .find-main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bar1 img,
+    .bar2 img,
+    .bar3 img,
+    .bar4 img,
+    .bar5 img {
+        display: none;
+    }
+
+    .find-bar1,
+    .find-bar2,
+    .find-bar3,
+    .find-bar4,
+    .find-bar5,
+    .bar-bottom,
+    .find-moderately,
+    .find-stressful,
+    .find-nt-strssf {
+        display: none;
+    }
+
+    /* How might we */
+    .how-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .how-side {
+        display: none;
+    }
+
+    /* Reasearch Explore */
+    .explore-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ex-side {
+        display: none;
+    }
+
+    /* Core */
+    .core-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .core-side {
+        display: none;
+    }
+
+    /* Business end */
+    .bus-main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bus-side {
+        display: none;
+    }
+
+    /* Inside the app */
+    .inside-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .inside-side {
+        display: none;
+    }
+
+    /* Summary */
+    .summary-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* Jmee Lee */
+
+    /* The brief */
+    .brief-side {
+        display: none;
+    }
+
+    .brief-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /* Key issues*/
+    .key-side {
+        display: none;
+    }
+
+    .key-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .key-web-old img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Proposal */
+    .prop-side {
+        display: none;
+    }
+
+    .prop-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /* Solve the prob  */
+    .solve-side {
+        display: none;
+    }
+
+    .solve-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /* <!-- CTA --> */
+    .cta-side {
+        display: none;
+    }
+
+    .cta-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /* <!-- Branding --> 
+ */
+    .bnd-side {
+        display: none;
+    }
+
+    .bnd-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    /* Wireframing  */
+
+    .wire-side {
+        display: none;
+    }
+
+    .wire-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    /* Mobile */
+    .mob-side {
+        display: none;
+    }
+
+    .mob-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .mob-wrap-out {
+        margin-bottom: 40px;
+    }
+
+
+    /* The result  */
+    .result-side {
+        display: none;
+    }
+
+    .result-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media all and (min-width: 481px) and (max-width: 767px) {
+
+
+    h1 {
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--mynz-brite-blue);
+    }
+
+    /* Naviagation */
+    .menu-btn {
+        display: block;
+        color: #ffffff;
+    }
+
+    .menu-btn:hover {
+        opacity: 0.5;
+    }
+
+    .main-nav ul.right-menu {
+        margin-right: 50px;
+    }
+
+    .main-nav ul.main-menu {
+        z-index: 9;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #f2f2f2;
+        width: 50%;
+        height: 100%;
+        border-right: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .main-menu a {
+        color: var(--black-dk);
+    }
+
+    .main-nav ul.main-menu li {
+        padding: 10px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+
+    .main-nav {
+        grid-template-areas:
+            "ml ml ml ml ml ml ml . . mm mm mm";
+    }
+
+    .main-nav ul.main-menu li:last-child {
+        border-bottom: 0;
+    }
+
+    .main-nav ul.main-menu.show {
+        transform: translateX(-20px);
+    }
+
+    .main-nav ul.main-menu.show li {
+        font-size: 20px;
+    }
+
+    /* index */
+    .hm-showcase-wrap {
+        margin-bottom: 75px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10, auto);
+        grid-template-areas:
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . h h h h h h h h h ."
+            ". . h h h h h h h h h  ."
+            ". . h h h h h h h h h ."
+            ". . d d d d d d d d d."
+            ". . d d d d d d d d d."
+            ". . l l l l l l . . . . "
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . .";
+    }
+
+    /* index */
+    .hm-mynz-wrap,
+    .hm-co-wrap,
+    .hm-jm-wrap {
+        margin-bottom: 65px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas:
+            "s s d d h h h h h h h h"
+            ". . i i i i i i i i i i"
+            ". . i i i i i i i i i i"
+            ". . i i i i i i i i i i"
+            " . . m m m m . . . . . ."
+            ". . des des des des des des des des des des "
+            ". . des des des des des des des des des des "
+            ". . vc vc vc vc . . . . . .";
+    }
+
+    /* Footer */
+    .hm-contact-wrapper {
+        text-align: center;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(1, auto);
+        grid-template-areas:
+            ". . c c c c c c c sm sm . ";
+    }
+
+
+    /* About */
+    .about-showcase-wrap {
+        margin-bottom: 75px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(9, auto);
+        grid-template-areas:
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            "s s h h h h h h h h h h"
+            ". . h h h h h h h h h h"
+            ". . h h h h h h h h h h"
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . .";
+    }
+
+    /* Bio */
+    .about-wrap {
+        margin-bottom: 65px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:
+            "s s d d d d d d d d d d  "
+            ". . d d d d d d d d d d  "
+            ". . d d d d d d d d d d  "
+            ". . i i i m m m m m m m"
+            ". . i i i m m m m m m m"
+            ". . c c c . . . . . . .";
+    }
+
+    /* Contact me */
+    /* Contact showcase */
+    .contact-showcase-wrap {
+        margin-bottom: 75px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(9, auto);
+        grid-template-areas:
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . h h h h h h  h h h h"
+            ". . h h h h h h  h h h h"
+            ". . h h h h h h  h h h h"
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . .";
+    }
+
+    .big-wrap {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "f f f f f f f f f f f f "
+            "f f f f f f f f f f f f "
+            "f f f f f f f f f f f f "
+            "f f f f f f f f f f f f "
+            "f f f f f f f f f f f f ";
+    }
+
+    /* Form */
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .wrapper>* {
+        padding: 1em;
+    }
+
+
+
+
+
+    /* Showcase MyNZ */
+    .showcase-wrap {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(16, auto);
+        grid-template-areas:
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            "h h h h h h h . . . . a"
+            "e e e e e e e e e e e e"
+            " . . . . p p p p . . . ."
+            " . . . . p p p p . . . ."
+            " . . . . p p p p . . . ."
+            " . . . . p p p p . . . ."
+            " . . . . p p p p . . . ."
+            " . . . . p p p p . . . ."
+            " . . . . p p p p . . . ."
+            " . . . . p p p p . . . ."
+            " . . . . p p p p . . . ."
+            " . . . . p p p p . . . .";
+    }
+
+    .side-text-wl {
+        display: none;
+    }
+
+    .my-nz-phone img,
+    .co-phone img,
+    .jm-phone-banner img {
+        max-height: 100%;
+        width: auto;
+    }
+
+    /* The problem */
+    .the-problem {
+        margin-bottom: 50px;
+        display: grid;
+        grid-gap: 10px;
+    }
+
+    /* * How might we */
+    .how-might-we {
+        margin-bottom: 50px;
+        grid-gap: 10px;
+    }
+
+    /* How it works */
+    .hw-it-wrks-wrap {
+        margin-bottom: 50px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, auto);
+        grid-template-areas:
+            "s s wh wh wh wh wh wh wh wh wh wh"
+            ". . wh wh wh wh wh wh wh wh wh wh "
+            ". . . . . . . . . . . ."
+            ". . i1 i1 i1 i2 i2 i2 . i3 i3 i3"
+            ". . i1 i1 i1 i2 i2 i2 . i3 i3 i3"
+            ". . i1 i1 i1 i2 i2 i2 . i3 i3 i3"
+            ". . i1 i1 i1 i2 i2 i2 . i3 i3 i3"
+            ". . i1 i1 i1 i2 i2 i2 . i3 i3 i3"
+            ". . i1 i1 i1 i2 i2 i2 . i3 i3 i3"
+            ". . i1 i1 i1 i2 i2 i2 . i3 i3 i3"
+            ". . i1 i1 i1 i2 i2 i2 . i3 i3 i3"
+            ". . st st st st st .  . m m m ";
+    }
+
+    /* Style and pod */
+    .style-pod-wrap {
+        margin-bottom: 50px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(15, auto);
+        grid-template-areas:
+            ". . sh sh sh sh sh sh . . . . "
+            " . . sw sw sw sw sw sw sw sw sw sw"
+            " . . sw sw sw sw sw sw sw sw sw sw"
+            " . . sw sw sw sw sw sw sw sw sw sw"
+            " . . i1 i1 i1 . i2 i2 i2 . . ."
+            " . . i1 i1 i1 . i2 i2 i2 . . ."
+            " . . i1 i1 i1 . i2 i2 i2 . . ."
+            ". . . . . . . . . . . ."
+            ". . ph ph ph ph ph ph . . . ."
+            ". . pd pd pd pd pd pd pd pd pd pd"
+            ". . pd pd pd pd pd pd pd pd pd pd"
+            ". . pd pd pd pd pd pd pd pd pd pd"
+            ". . p1 p1 . p2 p2 . p3 p3 . ."
+            ". . p1 p1 . p2 p2 . p3 p3 . ."
+            ". . p1 p1 . p2 p2 . p3 p3 . .";
+    }
+
+    /* Unique */
+    .unique-image img {
+        width: 100%;
+        height: auto;
+        align-self: center;
+    }
+
+    .unique-image {
+        align-self: center;
+    }
+
+    .unique-inner-wrap {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            "s s h h h h h h h i i i "
+            ". . d d d d d d d i i i"
+            ". . d d d d d d d i i i";
+    }
+
+    /* Memory created */
+    .mem-created-wrap {
+        margin-bottom: 50px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, auto);
+        grid-template-areas:
+            ". . h h h h h h h . . ."
+            ". . . . . . . . . . . ."
+            ". . p p p p . v v v v ."
+            ". . p p p p . v v v v ."
+            ". . p p p p . v v v v ."
+            ". . p p p p . v v v v ."
+            ". . p p p p . v v v v ."
+            ". . p p p p . v v v v ."
+            ". . p p p p . v v v v ."
+            ". . p p p p . v v v v ."
+            ". . p p p p . v v v v ."
+            ". . f f f f . vi vi vi vi . ";
+    }
+
+    /* Inside the app */
+    .inside-wrap {
+        margin-bottom: 80px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas:
+
+            "s s h h h i1 i1 i1 . i2 i2 i2"
+            ". . h h h i1 i1 i1 . i2 i2 i2 "
+            " . . d d d i1 i1 i1 . i2 i2 i2"
+            ". . . . . . . . . . . ."
+            ". . . . . i3 i3 i3 . i4 i4 i4"
+            ". . . . . i3 i3 i3 . i4 i4 i4"
+            ". . . . . i3 i3 i3 . i4 i4 i4";
+
+    }
+
+
+    /* Call Out - from findings */
+    /* Call out - from findings */
+    .find-main {
+        padding: 65px 0;
+        margin-bottom: 65px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "s s i1 i1 i1 i2 i2 i2 i3 i3 i3 ."
+            ". . i1 i1 i1 i2 i2 i2 i3 i3 i3 ."
+            ". . t1 t1 t1 t2 t2 t2 t3 t3 t3 ."
+            " . . s1 s1 s1 s1 s1 s1 s1 s1 s1 s1";
+    }
+
+    .bar1 img,
+    .bar2 img,
+    .bar3 img,
+    .bar4 img,
+    .bar5 img {
+        display: none;
+    }
+
+    .find-bar1,
+    .find-bar2,
+    .find-bar3,
+    .find-bar4,
+    .find-bar5,
+    .bar-bottom,
+    .find-moderately,
+    .find-stressful,
+    .find-nt-strssf {
+        display: none;
+    }
+
+    /* Explorations/Research */
+    .explore-wrap {
+        margin-bottom: 65px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(16, auto);
+        grid-template-areas:
+
+            "s s si si si si si si . . . ."
+            ". . l l l l l l l l l l"
+            ". . l l l l l l l l l l"
+            ". . . . . . . . . . . ."
+            ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+            ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+            ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+            ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+            ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+            ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+            ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+            ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+            ". . p p p p p it it it it it"
+            ". . p p p p p it it it it it"
+            ". . p p p p p . . . . .";
+    }
+
+    /* Business */
+    .bus-main {
+        padding: 20px 0;
+        margin-bottom: 65px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10, auto);
+        grid-template-areas:
+            "s s h h h h h h h h h h"
+            ". . d d d d d d d d d d"
+            ". . d d d d d d d d d d"
+            ". . d d d d d d d d d d"
+            " . . i i i i i i i i i i"
+            " . . i i i i i i i i i i"
+            " . . i i i i i i i i i i"
+            " . . i i i i i i i i i i"
+            " . . i i i i i i i i i i"
+            " . . i i i i i i i i i i";
+    }
+
+
+    /* Jmee lee  */
+
+    /* Key issues*/
+    .key-wrap {
+        margin-bottom: 65px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, auto);
+        grid-template-areas:
+
+
+            "s s is is is is is is is is is is"
+            ". . is is is is is is is is is is"
+            ". . c c c c c c c c c c"
+            ". . i i i i i i i i i i"
+            ". . i i i i i i i i i i"
+            ". . i i i i i i i i i i"
+            ". . i i i i i i i i i i"
+            ". . i i i i i i i i i i"
+            ". . i i i i i i i i i i"
+            ". . i i i i i i i i i i";
+
+    }
+
+    .key-web-old img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Solve the prob  */
+
+    .solve-wrap {
+        padding: 65px 0;
+        margin-bottom: 65px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(11, auto);
+        grid-template-areas:
+            "s s h h h h h h h h h h"
+            ". . d d d d d d d d d d"
+            ". . d d d d d d d d d d"
+            ". . i1 i1 i1 i1 . i2 i2 i2 i2 ."
+            ". . i1 i1 i1 i1 . i2 i2 i2 i2 ."
+            ". . i1 i1 i1 i1 . i2 i2 i2 i2 ."
+            ". . id1 id1 id1 id1 . id2 id2 id2 id2 ."
+            ". . id1 id1 id1 id1 . id2 id2 id2 id2 ."
+            ". . id1 id1 id1 id1 . id2 id2 id2 id2 ."
+            ". . id1 id1 id1 id1 . id2 id2 id2 id2 ."
+            ". . id1 id1 id1 id1 . id2 id2 id2 id2 .";
+
+
+    }
+
+    /* CTA  */
+    .cta-wrap {
+        margin-bottom: 65px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(9, auto);
+        grid-template-areas:
+            "s s d d d d d d d d d d"
+            " . . d d d d d d d d d d"
+            " . . d d d d d d d d d d"
+            ". . b b b b . . . . . ."
+            ". . cd cd cd cd cd cd cd cd cd cd"
+            ". . cd cd cd cd cd cd cd cd cd cd"
+            ". . cd cd cd cd cd cd cd cd cd cd"
+            ". . cd cd cd cd cd cd cd cd cd cd"
+            ". . cd cd cd cd cd cd cd cd cd cd";
+    }
+
+    /* Branding and logo */
+    .bnd-wrap {
+        margin-bottom: 65px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas:
+
+            "s s h h h h h h h h h h "
+            "s s h h h h h h h h h h "
+            ". . d d d d d d d d d d"
+            ". . d d d d d d d d d d"
+            ". . d d d d d d d d d d"
+            ". . l l l l l l l l l l"
+            ". . l l l l l l l l l l"
+            ". . cd cd cd cd cd cd cd cd cd cd"
+            ". . cd cd cd cd cd cd cd cd cd cd"
+            ". . cd cd cd cd cd cd cd cd cd cd"
+            ". . b1 b1 b1 b2 b2 b2 b3 b3 b3 ."
+            ". . b1 b1 b1 b2 b2 b2 b3 b3 b3 ."
+            ". . b1 b1 b1 b2 b2 b2 b3 b3 b3 ."
+            ". . fd fd fd fd fd fd fd fd fd fd"
+            ". . fd fd fd fd fd fd fd fd fd fd"
+            ". . fd fd fd fd fd fd fd fd fd fd"
+            ". . f1 f1 f1 f2 f2 f2 . . . ."
+            ". . f1 f1 f1 f2 f2 f2 . . . ."
+            ". . f1 f1 f1 f2 f2 f2 . . . .";
+
+    }
+
+    /* Mobile */
+    .mob-wrap-out {
+        margin-bottom: 40px;
+
+    }
+
+    .mob-wrap {
+        margin-bottom: 65px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:
+
+            "s s h h h h h h h h h h"
+            ". . d d d d d d p p p p"
+            ". . d d d d d d p p p p"
+            ". . d d d d d d p p p p"
+            ". . d d d d d d p p p p"
+            ". . d d d d d d p p p p";
+    }
+
+    /* The result */
+    .result-wrap {
+        margin-bottom: 65px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(45, auto);
+        grid-template-areas:
+            "s s h h h h . . . . . ."
+            ". . . . . . . . . . . ."
+            ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+            ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+            ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+            ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+            ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+            ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+            ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+            ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+            ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+            ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+            ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+            ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+            ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+            ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+            ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+            ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+            ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+            ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+            ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+            ". . i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+
+            ". . . . . . . . . . . ."
+            ". . . . . . . . . . . ."
+            " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+            " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+            " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+            " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+            " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+            " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+            " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+            " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+            " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+            " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+            " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+            " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+            " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+            " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+            " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+            " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+            " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+            " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+            " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+            " . . i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+        ;
+    }
+
+
+    /* footer */
+    .contact-wrapper {
+        text-align: center;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "st . gt gt gt gt but but but but but but"
+            ". . c c c c sm  . . . . . ";
+    }
+
+}
+
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+    h1 {
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--mynz-brite-blue);
+    }
+
+    /* Navigation */
+    .main-nav {
+        grid-template-areas:
+            ". . ml ml ml ml . mm mm mm mm mm";
+    }
+
+
+    /* index */
+    .hm-showcase-wrap {
+        margin-bottom: 75px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(11, auto);
+        grid-template-areas:
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . h h h h h h h h h ."
+            ". . h h h h h h h h h  ."
+            ". . h h h h h h h h h ."
+            ". . d d d d d d d d d."
+            ". . d d d d d d d d d."
+            ". . l l . . . . . . . ."
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . .";
+    }
+
+    .hm-mynz-wrap,
+    .hm-co-wrap,
+    .hm-jm-wrap {
+        margin-bottom: 65px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "s s d d . i i i i i i i "
+            ". . h h h i i i i i i i "
+            ". . m m . i i i i i i i"
+            ". . des des des des des des des des des des"
+            ". . vc vc vc . . . . . . .";
+    }
+
+    /* Footer */
+    .hm-contact-wrapper {
+        text-align: center;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(1, auto);
+        grid-template-areas:
+            ". . c c c c c sm sm . . . ";
+    }
+
+
+
+    /* About */
+    .about-showcase-wrap {
+        margin-bottom: 75px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10, auto);
+        grid-template-areas:
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            "s s h h h h h h h h h h"
+            ". . h h h h h h h h h h"
+            ". . h h h h h h h h h h"
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . .";
+    }
+
+    /* Bio */
+    .about-wrap {
+        margin-bottom: 65px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:
+            "s s d d d d d d d d d d  "
+            ". . d d d d d d d d d d  "
+            ". . d d d d d d d d d d  "
+            ". . i i i m m m m m m m"
+            ". . i i i m m m m m m m"
+            ". . c c c . . . . . . .";
+    }
+
+
+    /* Showcase */
+    .showcase-wrap {
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, auto);
+        grid-template-areas:
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            "a . h h h h . p p p p ."
+            ". . . . . . . p p p p ."
+            ". . . . . . . p p p p ."
+            "s . e e e e . p p p p ."
+            ". . . . . . . p p p p ."
+            ". . . . . . . p p p p ."
+            ". . . . . . . p p p p .";
+    }
+
+    /* Style */
+    .style-pod-wrap {
+        margin-bottom: 65px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, auto);
+        grid-template-areas:
+            ". . sh sh . i1 i1 i1 . i2 i2 i2 "
+            ". . sh sh . i1 i1 i1 . i2 i2 i2 "
+            ". . sw sw sw i1 i1 i1 . i2 i2 i2 "
+            ". . sw sw sw i1 i1 i1 . i2 i2 i2 "
+            ". . sw sw sw i1 i1 i1 . i2 i2 i2 "
+            ". . sw sw sw i1 i1 i1 . i2 i2 i2 "
+            ". . . . . . . . . . . ."
+            ". . . . . . . . . . . ."
+            ". . ph ph ph p1 p1 p2 p2 p3 p3 ."
+            ". . pd pd pd p1 p1 p2 p2 p3 p3 . ";
+    }
+
+    /* Unique */
+    .unique-image img {
+        width: 130%;
+    }
+
+
+    /* Call out - from findings */
+    .find-main {
+        padding: 65px 0;
+        margin-bottom: 65px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(9, auto);
+        grid-template-areas:
+            "s s i1 i1 i1 i2 i2 i2 i3 i3 i3 ."
+            ". . i1 i1 i1 i2 i2 i2 i3 i3 i3 . "
+            ". . i1 i1 i1 i2 i2 i2 i3 i3 i3 ."
+            ". . t1 t1 t1 t2 t2 t2 t3 t3 t3 ."
+            ". . t1 t1 t1 t2 t2 t2 t3 t3 t3 ."
+            ". . t1 t1 t1 t2 t2 t2 t3 t3 t3 ."
+            ". . . . . . . . . . . ."
+            " . . s1 s1 s1 s1 s1 s1 s1 s1 s1 s1"
+            " . . s1 s1 s1 s1 s1 s1 s1 s1 s1 s1";
+    }
+
+    .bar1 img,
+    .bar2 img,
+    .bar3 img,
+    .bar4 img,
+    .bar5 img {
+        display: none;
+    }
+
+    .find-bar1,
+    .find-bar2,
+    .find-bar3,
+    .find-bar4,
+    .find-bar5,
+    .bar-bottom,
+    .find-moderately,
+    .find-stressful,
+    .find-nt-strssf {
+        display: none;
+    }
+
+    /* Business */
+    .bus-main {
+        padding: 65px 0;
+        margin-bottom: 65px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10, auto);
+        grid-template-areas:
+            "s s h h h h h h h h h h"
+            ". . d d d d d d d d d d"
+            ". . d d d d d d d d d d"
+            ". . d d d d d d d d d d"
+            " . . i i i i i i i i i i"
+            " . . i i i i i i i i i i"
+            " . . i i i i i i i i i i"
+            " . . i i i i i i i i i i"
+            " . . i i i i i i i i i i"
+            " . . i i i i i i i i i i";
+    }
+
+    /* Inside the app */
+    .inside-wrap {
+        margin-bottom: 80px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(21, auto);
+        grid-template-areas:
+
+            "s s h h h i1 i1 i1 . i2 i2 i2"
+            ". . h h h i1 i1 i1 . i2 i2 i2 "
+            " . . d d d i1 i1 i1 . i2 i2 i2"
+            " . . . . . i1 i1 i1 . i2 i2 i2"
+            " . . . . . i1 i1 i1 . i2 i2 i2"
+            " . . . . . i1 i1 i1 . i2 i2 i2"
+            " . . . . . i1 i1 i1 . i2 i2 i2"
+            " . . . . . i1 i1 i1 . i2 i2 i2"
+            " . . . . . i1 i1 i1 . i2 i2 i2"
+            " . . . . . i1 i1 i1 . i2 i2 i2"
+            ". . . . . . . . . . . ."
+            ". . . . . i3 i3 i3 . i4 i4 i4"
+            ". . . . . i3 i3 i3 . i4 i4 i4"
+            ". . . . . i3 i3 i3 . i4 i4 i4"
+            ". . . . . i3 i3 i3 . i4 i4 i4"
+            ". . . . . i3 i3 i3 . i4 i4 i4"
+            ". . . . . i3 i3 i3 . i4 i4 i4"
+            ". . . . . i3 i3 i3 . i4 i4 i4"
+            ". . . . . i3 i3 i3 . i4 i4 i4"
+            ". . . . . i3 i3 i3 . i4 i4 i4"
+            ". . . . . i3 i3 i3 . i4 i4 i4";
+    }
+
+    .contact-wrapper {
+        text-align: center;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "st . gt gt gt gt . but but but . ."
+            "c c sm sm . . . . . . . .";
+    }
+
+    /* Explorations/Research */
+    .explore-wrap {
+        margin-bottom: 65px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(16, auto);
+        grid-template-areas:
+
+            "s s si si si si si si . . . ."
+            ". . l l l l l l l l l l"
+            ". . l l l l l l l l l l"
+            ". . . . . . . . . . . ."
+            ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+            ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+            ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+            ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+            ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+            ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+            ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+            ". . i1 i1 i1 i1 i1 i2 i2 i2 i2 i2"
+            ". . p p p p p it it it it it"
+            ". . p p p p p it it it it it"
+            ". . p p p p p . . . . .";
+    }
+
+
+
+
+
+    /* Jmmee Lee */
+    /* Branding and logo */
+    .bnd-wrap {
+        margin-bottom: 65px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas:
+
+            "s s h h h h h h h h h h "
+            "s s h h h h h h h h h h "
+            ". . d d d d d d d d d d"
+            ". . d d d d d d d d d d"
+            ". . d d d d d d d d d d"
+            ". . l l l l l l l l l l"
+            ". . l l l l l l l l l l"
+            ". . cd cd cd cd cd cd cd cd cd cd"
+            ". . cd cd cd cd cd cd cd cd cd cd"
+            ". . cd cd cd cd cd cd cd cd cd cd"
+            ". . b1 b1 b1 b2 b2 b2 b3 b3 b3 ."
+            ". . b1 b1 b1 b2 b2 b2 b3 b3 b3 ."
+            ". . b1 b1 b1 b2 b2 b2 b3 b3 b3 ."
+            ". . fd fd fd fd fd fd fd fd fd fd"
+            ". . fd fd fd fd fd fd fd fd fd fd"
+            ". . fd fd fd fd fd fd fd fd fd fd"
+            ". . f1 f1 f1 f2 f2 f2 . . . ."
+            ". . f1 f1 f1 f2 f2 f2 . . . ."
+            ". . f1 f1 f1 f2 f2 f2 . . . .";
+
+    }
+
+ /* Contact me */
+    /* Contact showcase */
+    .contact-showcase-wrap {
+        margin-bottom: 75px;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10, auto);
+        grid-template-areas:
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . h h h h h h  h h h h"
+            ". . h h h h h h  h h h h"
+            ". . h h h h h h  h h h h"
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . ."
+            ". . . . . . . . . .  . .";
+    }
+
+
+
+    /* footer */
+    .contact-wrapper {
+        text-align: center;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "st . gt gt gt gt . but but but but ."
+            ". . c c c c sm  . . . . . ";
+    }
+
+}
